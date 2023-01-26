@@ -5,6 +5,7 @@
         position: fixed
         width: 100%
         background: rgba(0,0,0,0.5 )
+        z-index: 10
     &__logo
         opacity: 0.8
     &__wrapper
@@ -57,6 +58,12 @@
         text-transform: uppercase
         color: #FFFFFF
         align-items: center
+        opacity: 0
+        transform: translateX(-120%)
+        transition: all 1s
+        &._active
+            transform: translateX(0)
+            opacity: 1
     &__subtitle
         margin-top: 50px
         font-family: 'Montserrat'
@@ -65,6 +72,12 @@
         font-size: 25px
         line-height: 30px
         color: #FFFFFF
+        opacity: 0
+        transform: translateX(-120%)
+        transition: all 0.8s
+        &._active
+            transform: translateX(0)
+            opacity: 1
     &__btn
         border: #fff
         margin-top: 50px
@@ -77,7 +90,12 @@
         font-size: 18px
         line-height: 22px
         color: #000000
-        transition: 0.3s all
+        opacity: 0
+        transform: translateX(-120%)
+        transition: all 0.8s
+        &._active
+            transform: translateX(0)
+            opacity: 1
         &:hover
             transition: 0.3s all
             transform: scale(1.05)

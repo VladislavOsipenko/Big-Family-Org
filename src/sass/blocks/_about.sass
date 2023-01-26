@@ -2,19 +2,37 @@
     margin-top: 112px
     &__wrapper
         margin-top: 40px
-        display: flex
+        display: grid
+        grid-template-columns: repeat(2, auto)
         justify-content: space-between
         column-gap: 40px
     &__img
-        width: 585px
-        height: 485px
+        source, img
+            width: 585px
+            height: 485px
+            opacity: 0
+            transform: translateX(-100%)
+            transition: all 1s
+            &._active
+                transform: translateX(0)
+                opacity: 1
     &__descr
         display: flex
         flex-direction: column
         row-gap: 20px
+    &__text
+        opacity: 0
+        transform: scale(0)
+        transition: all 1s
+        &._active
+            transform: scale(1)
+            opacity: 1
+
 .video
+    margin-top: 160px
     &__item
         display: block
         margin: 0 auto
         width: 1000px
         height: 565px
+    

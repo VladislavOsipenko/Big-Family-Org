@@ -1,0 +1,34 @@
+.benefits
+    margin-top: 150px
+    &__wrapper
+        margin-top: 40px
+    &__line
+        width: 100%
+        height: 1px
+        background-color: #000
+    &__text
+        display: flex
+        justify-content: space-between
+        padding: 20px 40px 20px 0
+        opacity: 0
+        transform: translateX(-100%)
+        transition: all 1s
+        &._active
+            transform: translateX(0)
+            opacity: 1
+    &__subtitle
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 500
+        font-size: 25px
+        line-height: 28px
+        text-transform: uppercase
+        color: #000000
+    &__descr
+        width: 430px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 28px
+        color: #000000

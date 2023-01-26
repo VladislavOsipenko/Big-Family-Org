@@ -1,0 +1,253 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px 
+    .video
+        &__item
+            width: 900px
+    .projects
+        &__text
+            width: 100%
+    .about
+        &__img 
+            img, source
+                width: 100%
+                height: 100%
+    .footer
+        &__title
+            font-size: 40px
+        &__descr
+            font-size: 20px
+    .galereya
+        &__slider
+            width: 900px
+
+
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .about, .projects, .galereya, .footer, .video, .benefits
+        margin-top: 100px
+    .header
+        min-height: 700px
+        &__descr
+            padding-top: 150px
+        &__title
+            font-size: 40px
+        &__subtitle
+            font-size: 20px
+        &__menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100%
+            padding: 20px 15px
+            background-color: rgba(0,0,0, .9)
+
+            transition: 0.6s all
+            z-index: 2
+            &_active 
+                left: 0
+        &__li
+                padding-right: 0
+                border: none
+                margin: 15px 0
+        &__link 
+                font-size: 25px
+        &__hamburger
+            display: block
+            padding-top: 7px
+            transform: translateY(-50%)
+            width: 26px
+            height: 12px
+            span 
+                display: block 
+                height: 2px
+                width: 100%
+                background-color: #fff 
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active 
+                span 
+                    background-color: red
+                    margin-bottom: -2px 
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                            transform: translateY(3px) rotate(45deg)
+    .about
+        &__wrapper
+            display: flex
+            flex-direction: column
+            gap: 40px
+    .video
+        &__item
+            width: 100%
+    .projects
+        &__wrapper
+            grid-template-columns: repeat(2, 340px)
+            grid-template-rows: repeat(2, 340px)
+            row-gap: 0
+        &__img
+            img
+                height: 75%
+    .galereya
+        &__slider
+            width: 720px
+        &__img
+            width: 720px
+            img
+                width: 100%
+                height: 75%
+    .benefits
+        &__subtitle
+            width: 330px
+    .footer
+        margin-top: 0
+        &__title
+            text-align: right
+            font-size: 35px
+        &__descr
+            text-align: right
+            font-size: 18px
+        &__btn
+            text-align: right
+        &__form
+            margin-left: 110px
+            form
+                width: 100%
+                margin: 0
+                text-align: right
+
+
+
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        font-size: 35px
+    .header
+        &__logo
+            height: 50px
+        &__text
+            font-size: 14px
+        &__phone
+            font-size: 14px
+        &__descr
+            text-align: center
+    .projects
+        &__wrapper
+            grid-template-columns: repeat(1, auto) 
+            grid-template-rows: none
+            row-gap: 30px
+        &__img
+            img, source
+                height: 100%
+                transform: translateX(-20%)
+        #img
+            grid-row: 4/5
+    .benefits
+        &__text
+            flex-direction: column
+            row-gap: 20px
+        &__subtitle
+            width: 100%
+        &__descr
+            width: 100%
+    .slick-slide
+        width: 500px
+        height: 400px
+    .video
+        &__item
+            height: 300px
+    .footer
+        &__title
+            font-size: 30px
+        &__descr
+            font-size: 15px
+        &__form
+            width: 230px
+        &__btn
+            button
+                width: 230px
+    .galereya
+        &__slider
+            width: 100%
+
+
+
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .header
+        &__text
+            display: none
+        &__descr
+            padding-top: 100px
+        &__title
+            font-size: 30px
+        &__subtitle
+            margin-top: 40px
+            font-size: 18px
+        &__btn
+            margin-top: 40px
+    .about, .projects, .galereya, .footer, .video, .benefits
+        margin-top: 50px
+    .video
+        &__item
+            height: 200px
+    .title
+        font-size: 30px
+    .projects
+        &__text
+            &-title
+                font-size: 25px
+    .slick-slide
+        width: 300px
+        height: 250px
+    .footer
+        &__wrapper
+            grid-template-columns: repeat(1, auto) 
+        &__phone
+            margin-top: 15px
+        &__social
+            margin-top: 15px
+            justify-content: center
+        &__confid
+            margin-top: 15px
+        &__item
+            text-align: center
+        &__title
+            margin-top: 30px
+            text-align: center
+        &__descr
+            margin-top: 0
+            text-align: center
+        &__form
+            text-align: center
+            aline-item: center
+            margin: 0 auto
+            margin-top: 30px
+    .modal
+        width: 300px
+        &-form__input
+            width: 220px
+            input
+                width: 100%
+        &__close
+            top: 10px
+            right: 10px
+
+            
+
+
+

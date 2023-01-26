@@ -5,7 +5,7 @@
 @import "base/_variables"
 @import "base/_mixin"
 @import "base/_animation"
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600;700&display=swap')
 
 *
     font-family: 'Inter', sans-serif
@@ -26,6 +26,12 @@
     line-height: 50px
     text-transform: uppercase
     color: #000000
+    opacity: 0
+    transform: scale(0)
+    transition: all 1s
+    &._active
+        transform: scale(1)
+        opacity: 1
 
 .text
     font-family: 'Montserrat'
@@ -34,8 +40,13 @@
     font-size: 20px
     line-height: 28px
     color: #000000
+    
 
 @import "blocks/_header"
 @import "blocks/_about"
 @import "blocks/_projects"
-    
+@import "blocks/_benefits"
+@import "blocks/_galereya"  
+@import "blocks/_footer"   
+@import "blocks/_overlay"  
+@import "blocks/_media"    
